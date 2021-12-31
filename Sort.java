@@ -22,13 +22,13 @@ class Student{
 }
 
 //Complete the code
-public class Solution
+public class Sort
 {
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		int testCases = Integer.parseInt(in.nextLine());
 		
-		List<Student> studentList = new ArrayList<Student>();
+		ArrayList<Student> studentList = new ArrayList<Student>();
 		while(testCases>0){
 			int id = in.nextInt();
 			String fname = in.next();
@@ -39,6 +39,7 @@ public class Solution
 			
 			testCases--;
 		}
+		in.close();
         /* 
             Using sort method with Comparator class override compare() method.
             sort(new Comparator<Student>(){

@@ -1,12 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-public class JAVA_List {
+public class List {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
-        List<Integer> list = new LinkedList<Integer>();
+        LinkedList<Integer> list = new LinkedList<Integer>();
         int count = sc.nextInt();
         for(int i =0;i<count; i++){
             list.add(sc.nextInt());
