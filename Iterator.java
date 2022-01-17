@@ -5,7 +5,7 @@ public class Main{
       Iterator it=mylist.iterator();
       while(it.hasNext()){
          Object element = it.next();
-         if()//Hints: use instanceof operator
+         if(element instanceof Integer)//Hints: use instanceof operator
 
 			break;
 		}
