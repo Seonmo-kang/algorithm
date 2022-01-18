@@ -83,10 +83,19 @@ public class MyLinkedList {
     void deleteAtIndex(int index){
         if(index>this.length || index<0){
             break;
-        }else if(index==0){
-            Node temp = head;
-
-            this.length--;
+        }
+        Node temp = head;
+        if(index==0){
+            head = temp.next;
+        }else{
+            Node temp2 = head;
+            Node pre = null;
+            int counter=0;
+            while(counter != index){
+                temp2 = temp2.next;
+                counter++;
+            }
+            pre.next = temp2.next;
         }
         return;
     }
